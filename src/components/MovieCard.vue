@@ -94,10 +94,13 @@ function cortarSinopse(texto: string) {
 .poster-area {
   position: relative;
   background: #111;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
 }
 
 .poster-img {
-  height: 380px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 

@@ -149,9 +149,12 @@ onMounted(() => {
   <main class="min-vh-100 text-white pagina-filmes">
     <section class="hero-cineverse text-center">
       <div class="container py-5 position-relative">
-        <h1 class="display-4 fw-bold mb-3">CineVerse</h1>
+        <div class="titulo-cineverse mb-3">
+            <h1 class="display-4 fw-bold mb-3 logo-cineverse">CineVerse</h1>
+            <div class="linha-logo"></div>
+        </div>
 
-        <p class="lead text-light mb-0">Explore filmes populares e veja detalhes completos.</p>
+        <p class="lead texto-subtitulo mb-0">Busque filmes, explore gêneros e descubra detalhes completos em um catálogo inspirado no cinema.</p>
       </div>
     </section>
 
@@ -194,6 +197,29 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.titulo-cineverse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-cineverse {
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+.linha-logo {
+  width: 120px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #dc3545;
+  box-shadow: 0 0 12px rgba(220, 53, 69, 0.45);
+}
+.texto-subtitulo {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 720px;
+  margin: 0 auto;
+}
 .pagina-filmes {
   position: relative;
   background:
